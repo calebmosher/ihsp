@@ -20,7 +20,16 @@
 <body>
 	<main>
 		<div class="hero">
-			<div class="logo"></div>
+			<nav>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li class="logo"> </li>
+					<li><a href="#">Videos</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+
 			<div class="wrap copy">
 				<h1>Get your life back.</h1>
 				<a class="cta">Request an appointment</a>
