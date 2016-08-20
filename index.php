@@ -42,7 +42,7 @@
 
 				<h2>Take your days off of hold.</h2>
 				<p class="copy">Chiropractic care means getting back to the things you love. We provide one of the widest arrays of services in the Dayton Area for holistic wellness. We'll get you back on your feet, and back to your life.</p>
-				<p class="copy"><a class="tout" href="/services">See how</a>
+				<p class="copy"><a class="tout" href="#">See how</a>
 			</div>
 		</section>
 
