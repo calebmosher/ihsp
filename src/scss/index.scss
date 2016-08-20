@@ -1,5 +1,8 @@
 // Global
 
+$blue: #2984C2;
+$green: #6FBE5C;
+
 * {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
@@ -23,11 +26,34 @@ body {
 }
 section {
 	clear: both;
-	overflow: auto;
-}
+	overflow: visible;
 
-$blue: #2984C2;
-$green: #6FBE5C;
+	&.section-heading {
+		padding: 150px 0;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+
+		h2 {
+			margin: 0;
+			color: #fff;
+		}
+	}
+	&.section-main {
+		background: #fdfdfd;
+		padding: 100px 0;
+		overflow: auto;
+		box-shadow: 0 0 20px -5px #000;
+		position: relative;
+		z-index: 2;
+
+		&:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+	}
+}
 
 
 
@@ -42,7 +68,10 @@ h2 {
 .copy {
 	font-size: 18px;
 	color: #333;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
+}
+a {
+	color: inherit;
 }
 a.tout {
 	color: $blue;
@@ -54,10 +83,31 @@ a.tout {
 	&:after {
 		content: " 〉";
 		font-size: 15px;
+		border-bottom: 2px solid #fff;
 	}
 	&:hover {
 		color: #000;
 		border-bottom: 1px solid #000;
+	}
+}
+a.cta {
+	font-size: 20px;
+	display: block;
+	padding: 10px;
+	margin: 0 auto;
+	width: 270px;
+	border-radius: 6px;
+	border: 2px solid #fff;
+	color: #fff;
+	cursor: pointer;
+	background: transparent;
+	transition:
+		background 200ms ease,
+		color 200ms ease;
+
+	&:hover {
+		background: #fff;
+		color: #000;
 	}
 }
 
@@ -75,6 +125,7 @@ a.tout {
 		height: 160px;
 		margin: 30px auto 0;
 		background: rgba(255, 255, 255, .85);
+		box-shadow: 0 0 20px -5px #000;
 
 		ul {
 			list-style-type: none;
@@ -119,31 +170,12 @@ a.tout {
 			margin-top: 100px;
 		}
 		a.cta {
-			font-size: 20px;
-			display: block;
-			padding: 10px;
-			margin: 60px auto 0;
-			width: 270px;
-			border-radius: 6px;
-			border: 2px solid #fff;
-			cursor: pointer;
-			background: transparent;
-			transition:
-				background 200ms ease,
-				color 200ms ease;
-
-			&:hover {
-				background: #fff;
-				color: #000;
-			}
+			margin-top: 60px;
 		}
 	}
 }
 .intro {
-	padding: 100px 0;
-	overflow: auto;
-
-	.spinal-xray {
+	.woman-running {
 		display: block;
 		background: url("/assets/woman-running.jpg") no-repeat;
 		background-size: 100%;
@@ -152,36 +184,75 @@ a.tout {
 		float: right;
 		margin: 0 0 15px 0;
 		border-radius: 50%;
+		box-shadow: 0px 0px 12px -4px #000;
 	}
 	h2 {
-		padding-top: 50px;
+		//padding-top: 50px;
 	}
 	.copy {
 		max-width: 490px;
 	}
 }
 .who-we-are-heading {
-	padding: 120px 0;
 	background: url("/assets/doctors-office.jpg") no-repeat;
 	background-size: 100%;
-	color: #fff;
-	text-align: center;
-
-	h2 {
-		margin: 0;
-		color: #fff;
-	}
 }
 .who-we-are {
-	padding: 100px 0;
-
 	.dr-curry {
 		display: block;
 		background: url("/assets/dr-curry.jpg") no-repeat;
 		background-size: 100% auto;
 		width: 300px;
-		height: 400px;
+		height: 300px;
 		float: left;
-		margin: 0 100px 100px 0;
+		margin: 0 100px 0 0;
+		border-radius: 50%;
+		box-shadow: 0px 0px 12px -4px #000;
+	}
+}
+.let-us-know-heading {
+	background: url("/assets/exploring-nature.jpg") no-repeat;
+	background-size: 100%;
+	background-position: center 42%;
+}
+.let-us-know {
+	text-align: center;
+
+	.copy {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+footer {
+	padding: 100px 0 100px;
+	background: #666;
+	text-align: center;
+
+	.copy {
+		color: #ddd;
+	}
+	a.cta {
+		margin-top: 30px;
+		margin-bottom: 60px;
+
+		&:hover {
+			color: #666;
+		}
+	}
+	.divider {
+		margin: 0 auto 60px;
+		border-bottom: 1px solid #999;
+		max-width: 960px;
+	}
+	.legal {
+		span {
+			display: inline-block;
+			padding: 10px;
+			margin: 0 30px 20px;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
 	}
 }
