@@ -87,7 +87,7 @@
 			<div class="legal copy">
 				<span><a href="#">Terms of Use</a></span>
 				<span><a href="#">Privacy Policy</a></span>
-				<div class="copyright">&copy; Copyright 2016 Integrative Health + Sports Performance</div>
+				<div class="copyright">Copyright 2016, <a href="/">Integrative Health + Sports Performance</a></div>
 			</div>
 		</footer>
 	</main>
